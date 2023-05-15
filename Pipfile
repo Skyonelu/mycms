@@ -1,0 +1,25 @@
+[[source]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fastapi = "*"
+casbin = "*"
+uvicorn = {extras = ["standard"], version = "*"}
+loguru = "*"
+python-jose = "*"
+python-multipart = "*"
+bcrypt = "*"
+passlib = "*"
+aiomysql = "*"
+email-validator = "*"
+casbin-tortoise-adapter = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.7"
+
+[scripts]
+dev = "python run.py"
